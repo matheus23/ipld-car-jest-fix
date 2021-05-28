@@ -770,7 +770,8 @@ var CID = class {
       offset = 0;
     } else if (version2 === 1) {
       codec = next();
-    } else if (version2 !== 1) {
+    }
+    if (version2 !== 0 && version2 !== 1) {
       throw new RangeError(`Invalid CID version ${version2}`);
     }
     const prefixSize = offset;
@@ -819,7 +820,7 @@ var parseCIDtoBytes = (source, base2) => {
     }
     default: {
       if (base2 == null) {
-        throw Error("To parse non base32 or base56btc encoded CID multibase decoder must be provided");
+        throw Error("To parse non base32 or base58btc encoded CID multibase decoder must be provided");
       }
       return [
         source[0],
