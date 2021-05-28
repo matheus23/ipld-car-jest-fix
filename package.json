@@ -55,7 +55,7 @@
     "esbuild": "^0.12.1",
     "hundreds": "^0.0.9",
     "ipjs": "^5.0.0",
-    "ipld-garbage": "^3.0.3",
+    "ipld-garbage": "^4.0.1",
     "jsdoc4readme": "^1.4.0",
     "mocha": "^8.4.0",
     "polendina": "^1.1.0",
